@@ -1,0 +1,100 @@
+* {
+    padding : 0;
+    margin : 0;
+}
+html {
+  /* background: url("../img/background.jpg") no-repeat center center fixed;
+  background-size: cover; */
+  background-color: cyan;
+}
+button {
+  align-self: center;
+  width: 100px;
+  height: 50px;
+  margin-top: 1rem;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color : black;
+}
+
+div{
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-content: space-evenly;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-content: space-evenly;
+}
+#past,
+#present,
+#future {
+  width: 25%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  flex-basis: auto;
+}
+
+#past-name,
+#present-name,
+#future-name {
+}
+
+#past-title,
+#present-title,
+#future-title {
+}
+
+#past-img,
+#present-img,
+#future-img {
+  border: 2px solid black;
+  width: 85%;
+  max-width: 350px;
+}
+.reverse {
+    transform: scaley(-1) scalex(-1);
+}
+
+#past-meaning,
+#present-meaning,
+#future-meaning {
+  border: 2px solid black;
+  width: 85%;
+  min-height: 50px;
+  margin-top: 1rem;
+  text-align: center;
+  background-color: white;
+}
+  /* border: 2px solid red;
+  background-color:orange; */
+/* h3,
+img,
+p {
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  align-items: center;
+} */
+@media(min-width: 725px){
+  #past-img,
+  #present-img,
+  #future-img {
+    border: 2px solid black;
+    /* max-width: 85%;
+    min-width: 205px; */
+}
